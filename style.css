@@ -618,108 +618,128 @@ span {
 
 
 /*....RESPONSIVENESS OF WEBSITE....*/
-@media (max-width: 1285px) {
+/* Mobile responsiveness for screens smaller than 768px */
+@media (max-width: 768px) {
+    /* General font size adjustment */
     html {
-        font-size: 55%;
+        font-size: 50%;
     }
 
-    .services-container {
-        padding-bottom: 7rem;
-        grid-template-columns: repeat(2, 1fr);
-        margin: 0 5rem;
-    }
-}
-
-@media (max-width: 991px) {
-    header {
-        padding: 2rem 3%;
-    }
-
-    section {
-        padding: 10rem 3% 2rem;
-    }
-
-    .services {
-        padding-bottom: 7rem;
-    }
-
-    .footer {
-        padding: 2rem 3%;
-    }
-}
-
-@media (max-width: 895px) {
-    .nav-toggle {
-        display: flex;
-    }
-
+    /* Navbar adjustments */
     .navbar {
-        position: absolute;
-        top: 100%;
-        right: 0;
-        width: 50%;
-        padding: 1rem 3%;
+        width: 100%;
+        padding: 1rem 0;
         background: rgba(0, 0, 0, 0.9);
-        border-bottom-left-radius: 2rem;
-        border-left: 2px solid var(--main-color);
-        border-bottom: 2px solid var(--main-color);
-        display: none;
     }
 
-    .navbar.active {
-        display: block;
-    }
-
-    .navbar a {
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-        color: white;
-    }
-
-    .home {
-        flex-direction: column;
-        margin: 5rem 4rem;
-    }
-
-    .home-content h3 {
-        font-size: 2.6rem;
-    }
-
+    /* Home section adjustments */
     .home-content h1 {
-        font-size: 8rem;
-        margin-top: 3rem;
+        font-size: 5rem;
     }
-
+    
+    .home-content h3 {
+        font-size: 2.5rem;
+    }
+    
     .home-content p {
-        max-width: 600px;
-        margin: 0 auto;
+        font-size: 1.4rem;
+        padding: 0 1rem;
+        text-align: center;
     }
 
     .home-img img {
-        width: 30vw;
-        margin-top: -2rem;
+        width: 50vw;
     }
 
-    .about {
-        flex-direction: column-reverse;
+    /* About section adjustments */
+    .about-content h2 {
+        font-size: 5rem;
+    }
+    
+    .about-content h3 {
+        font-size: 2.2rem;
+    }
+    
+    .about-content p {
+        font-size: 1.4rem;
+        padding: 0 1rem;
     }
 
-    .about-content {
-        margin: 0 2rem 4rem;
-    }
-
-    .about img {
-        width: 30vw;
-        margin-top: 1rem;
-        margin-bottom: 3rem;
-    }
-
-    .services h2 {
-        margin-bottom: 3rem;
-    }
-
+    /* Services section adjustments */
     .services-container {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    .service-box {
+        height: auto;
+        padding: 2rem;
+    }
+
+    /* Projects section adjustments */
+    .projects-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    .projects-box {
+        height: auto;
+        padding: 2rem;
+    }
+
+    /* Contact section adjustments */
+    .contact form .input-box {
+        flex-direction: column;
+    }
+
+    .contact form .input-box input, .contact form textarea {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+}
+
+/* Extra small screens smaller than 576px */
+@media (max-width: 576px) {
+    /* Further font size adjustment */
+    html {
+        font-size: 45%;
+    }
+
+    /* Navbar icon */
+    .navbar a {
+        font-size: 1.6rem;
+        margin: 1.5rem 0;
+    }
+
+    /* Header logo */
+    .logo {
+        font-size: 2.5rem;
+    }
+
+    /* Social icons */
+    .social-icons a {
+        width: 4rem;
+        height: 4rem;
+        font-size: 2rem;
+    }
+
+    /* Button adjustments */
+    .btn {
+        font-size: 1.4rem;
+        padding: 0.8rem 2rem;
+    }
+
+    /* Footer social icons */
+    .footer .social a {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+    }
+
+    /* Footer text */
+    .footer ul li {
+        padding: 0 10px;
     }
 }
