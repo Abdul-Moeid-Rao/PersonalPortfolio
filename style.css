@@ -626,11 +626,34 @@ span {
     }
 
     /* Navbar adjustments */
-    .navbar {
-        width: 100%;
-        padding: 1rem 0;
-        background: rgba(0, 0, 0, 0.9);
+    .nav-toggle {
+        display: flex;
     }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        padding: 1rem 3%;
+        background: rgba(0, 0, 0, 0.9);
+        border-bottom-left-radius: 2rem;
+        border-left: 2px solid var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        color: white;
+    }
+    
 
     /* Home section adjustments */
     .home-content h1 {
@@ -674,14 +697,14 @@ span {
 
     .service-box {
         height: auto;
-        padding: 2rem;
+        padding: 1.5rem;
     }
 
     /* Projects section adjustments */
     .projects-container {
         grid-template-columns: 1fr;
         gap: 1.5rem;
-        padding: 0 1rem;
+        padding: 0.5rem;
     }
 
     .projects-box {
@@ -708,11 +731,34 @@ span {
     }
 
     /* Navbar icon */
-    .navbar a {
-        font-size: 1.6rem;
-        margin: 1.5rem 0;
+    .nav-toggle {
+        display: flex;
     }
 
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        padding: 1rem 3%;
+        background: rgba(0, 0, 0, 0.9);
+        border-bottom-left-radius: 2rem;
+        border-left: 2px solid var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        color: white;
+    }
+    
     /* Header logo */
     .logo {
         font-size: 2.5rem;
