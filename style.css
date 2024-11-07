@@ -687,20 +687,21 @@ span {
     }
 
     .home-content h1 {
-        font-size: 8rem;
-        margin-top: 3rem;
+        font-size: 6rem;
+        margin-top: 1rem;
     }
 
     .home-content p {
         max-width: 600px;
         margin: 0 auto;
+        font-size: 2rem;
     }
 
     .home-img img {
-        width: 30vw;
-        margin-top: -2rem;
+        display: none;
     }
-
+    
+    /* ................About Section.................. */
     .about {
         flex-direction: column-reverse;
     }
@@ -710,16 +711,61 @@ span {
     }
 
     .about img {
-        width: 30vw;
-        margin-top: 1rem;
-        margin-bottom: 3rem;
+        width: 50vw;
+        margin-top: 0rem;
+        margin-bottom: 1rem;
     }
-
-    .services h2 {
-        margin-bottom: 3rem;
-    }
-
+ 
+    /* ................Services Section.................. */
     .services-container {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .service-box {
+        min-height: auto;
+    }
+    .service-info{
+        overflow: scroll;
+    }
+    .service-info h3 {
+        font-size: 3rem;
+        
+    }
+
+    .service-info p {
+        font-size: 2rem;
+    }
+    
+    /* Projects Section  */
+     .projects-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .projects-box {
+        min-height: auto;
+    }
+
+    .projects-info h3 {
+        font-size: 3rem;
+        margin-top: -10px;
+    }
+
+    .projects-info p {
+        font-size: 2rem;
+    }
+
+    /* Contact Section */
+    .contact form .input-box input,
+    .contact form textarea {
+        font-size: 1.5rem;
+    }
+
+    .contact form .btn {
+        font-size: 2rem;
+    }
+    .contact h2{
+        font-size: 7rem;
     }
 }
