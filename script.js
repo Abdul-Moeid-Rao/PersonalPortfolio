@@ -18,6 +18,13 @@ window.onscroll = () => {
         }
     });
 };
+// Close the navbar on window resize to larger than mobile view
+window.onresize = () => {
+    if (window.innerWidth > 768) {
+        navbar.classList.remove('active');
+        menuIcon.classList.remove('active');
+    }
+};
 
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('active');
