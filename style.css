@@ -786,3 +786,8 @@ span {
     }
 }
 
+/* General adjustments */
+.services {
+    padding: 2rem 0;
+    background: var(--bg-color);
+}
