@@ -720,24 +720,41 @@ span {
     .services-container {
         grid-template-columns: 1fr;
         gap: 2rem;
+        margin: 0 auto; 
+        width: 100%; 
     }
 
     .service-box {
-        min-height: auto;
+        margin: 0 auto; 
+        border-radius: 2rem;
+        background-color: var(--main-color);
+        color: black;
+        width: 90%; 
     }
-    .service-info{
-        overflow: scroll;
-    }
+
     .service-info h3 {
         font-size: 3rem;
-        
+        margin: 3rem 0 1rem 0;
     }
 
     .service-info p {
         font-size: 2rem;
     }
-    
-    /* Projects Section  */
+
+    .service-info .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .service-info .social-icons a {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 2rem;
+    }
+
+    /* ......................Projects Section.....................  */
      .projects-container {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -745,11 +762,14 @@ span {
 
     .projects-box {
         min-height: auto;
+        padding: 2rem;
+        margin: 0 auto; 
+        width: 95%; 
     }
 
     .projects-info h3 {
         font-size: 3rem;
-        margin-top: -10px;
+        margin-top: -20px;
     }
 
     .projects-info p {
@@ -768,4 +788,10 @@ span {
     .contact h2{
         font-size: 7rem;
     }
+}
+
+/* General adjustments */
+.services {
+    padding: 2rem 0;
+    background: var(--bg-color);
 }
